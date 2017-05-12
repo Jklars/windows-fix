@@ -37,7 +37,7 @@ function doit {
 	sudo fdisk -l | grep bios >> msftres
 	sudo fdisk -l | grep msftdata >> msftdata
 
-	python3 givepos.py
+	python3 givepos.py 1
 
 	export MSFTRES=$(<msftres)
 	export MSFTDATA=$(<msftdata)
