@@ -8,7 +8,7 @@ try:
 except ValueError:
 	exec = False
 
-files = ['msftres', 'msftdata']
+files = [ 'msftdata', 'msftres']
 
 def DoStuff(i):
 	global files
