@@ -1,3 +1,13 @@
+import sys
+
+total = len(sys.argv)
+exec = True
+
+try:  
+	argument = int(sys.argv)
+except ValueError:
+	exec = False
+
 files = ['msftres', 'msftdata']
 
 def DoStuff(i):
@@ -19,5 +29,6 @@ def DoStuff(i):
 
 	file.close()
 
-for i in range(0,1):
-	DoStuff(i)
+if exec == True:
+	for i in range(0,argument):
+		DoStuff(i)
