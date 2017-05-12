@@ -16,7 +16,6 @@ cat << EOF
 '############################################'
 EOF
 
-
 function doit {
 	ls /sys/firmware/efi/efivars
 
