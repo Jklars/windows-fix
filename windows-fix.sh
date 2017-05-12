@@ -30,6 +30,9 @@ function doit {
 		echo BIOS MODE
 	fi
 
+	echo Backing Up your Personal Files
+	
+	./backup.sh
 
 	sudo fdisk -l | grep bios >> msftres
 	sudo fdisk -l | grep msftdata >> msftdata
