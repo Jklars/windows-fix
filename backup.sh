@@ -4,7 +4,7 @@ echo Starting Backup
 echo Detecting Data Partition Position
 sudo fdisk -l | grep msftdata >> msftdata
 
-python3 givepos.py
+python3 givepos.py 0
 
 export MSFTDATA=(<msftdata)
 
