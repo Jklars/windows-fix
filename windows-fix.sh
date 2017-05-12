@@ -2,15 +2,16 @@
 
 echo '############################################'
 echo
-echo '      __        __ ____ _ '
-echo '      \ \      / /  ___| |'    
-echo '       \ \ /\ / /| |_  | |'    
-echo '        \ V  V / |  _| | |___' 
-echo '         \_/\_/  |_|   |_____|'
+echo '         __        __ ____ _ '
+echo '         \ \      / /  ___| |'    
+echo '          \ \ /\ / /| |_  | |'    
+echo '           \ V  V / |  _| | |___' 
+echo '            \_/\_/  |_|   |_____|'
 echo 
-echo '          WINDOWS FIX TOOL'
-echo '       If you dont have Windows'
-echo '    You wont have Windows problems'
+echo '             WINDOWS FIX TOOL'
+echo '          If you dont have Windows'
+echo '       You wont have Windows problems'
+echo '         10 seconds to real freedom'
 echo
 echo '############################################'
 
