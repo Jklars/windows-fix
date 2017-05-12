@@ -8,7 +8,7 @@ echo '       \ \ /\ / /| |_  | |'
 echo '        \ V  V / |  _| | |___' 
 echo '         \_/\_/  |_|   |_____|'
 echo 
-echo '          WINDOWS FIXER TOOL'
+echo '          WINDOWS FIX TOOL'
 echo '       If you dont have Windows'
 echo '    You wont have Windows problems'
 echo
