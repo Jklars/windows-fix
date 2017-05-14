@@ -30,5 +30,5 @@ def DoStuff(i):
 	file.close()
 
 if exec == True:
-	for i in range(0,argument[1]):
+	for i in range(0,argument):
 		DoStuff(i)
