@@ -13,4 +13,4 @@ bash(sh is not reccomended as it was made for bash)
 
 Credits:
 Jklars(code)
-Arlekyn(idea)
+Arlekyn(idea, improvements in code)
