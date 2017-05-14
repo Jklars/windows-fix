@@ -4,7 +4,7 @@ total = len(sys.argv)
 exec = True
 
 try:  
-	argument = int(sys.argv)
+	argument = int(sys.argv[1])
 except ValueError:
 	exec = False
 
@@ -30,5 +30,5 @@ def DoStuff(i):
 	file.close()
 
 if exec == True:
-	for i in range(0,argument):
+	for i in range(0,argument[1]):
 		DoStuff(i)
