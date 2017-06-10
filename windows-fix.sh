@@ -33,7 +33,7 @@ function doit {
 	fdisk -l | grep "Microsoft reserved" >> msftres
 	fdisk -l | grep "Microsoft basic data" >> msftdata
 	
-	./backup.sh
+	#./backup.sh
 
 	python3 givepos.py 1
 
