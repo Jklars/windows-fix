@@ -1,19 +1,19 @@
 #!/bin/bash
 
 cat << EOF
-'############################################'
-'         __        __ ____ _ '
-'         \ \      / /  ___| |'    
-'          \ \ /\ / /| |_  | |'    
-'           \ V  V / |  _| | |___' 
-'            \_/\_/  |_|   |_____|'
+############################################
+         __        __ ____ _ 
+         \ \      / /  ___| |    
+          \ \ /\ / /| |_  | |    
+           \ V  V / |  _| | |___ 
+            \_/\_/  |_|   |_____|
  
-'             WINDOWS FIX TOOL'
-'          If you dont have Windows'
-'       You wont have Windows problems'
-'         10 seconds to real freedom'
+             WINDOWS FIX TOOL
+          If you dont have Windows
+       You wont have Windows problems
+         10 seconds to real freedom
 
-'############################################'
+############################################
 EOF
 
 function doit {
@@ -29,13 +29,11 @@ function doit {
 	else
 		echo BIOS MODE
 	fi
-
-	echo Backing Up your Personal Files
 	
 	./backup.sh
 
-	sudo fdisk -l | grep bios >> msftres
-	sudo fdisk -l | grep msftdata >> msftdata
+	fdisk -l | grep "Microsoft reserved" >> msftres
+	fdisk -l | grep "Microsoft basic data" >> msftdata
 
 	python3 givepos.py 1
 
@@ -46,7 +44,7 @@ function doit {
 	parted /dev/sda rm $MSFTRES
 }
 
-read -r -p "Do you want to fix Windows problems? [Y/n] " response
+read -r -p "Do you want to fix Windows problems? [y/N] " response
 
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
