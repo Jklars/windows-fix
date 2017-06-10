@@ -30,10 +30,10 @@ function doit {
 		echo BIOS MODE
 	fi
 	
-	./backup.sh
-
 	fdisk -l | grep "Microsoft reserved" >> msftres
 	fdisk -l | grep "Microsoft basic data" >> msftdata
+	
+	./backup.sh
 
 	python3 givepos.py 1
 
