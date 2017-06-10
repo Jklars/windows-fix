@@ -9,7 +9,7 @@ Requires:
 - parted
 - fdisk
 - python3
-- bash(any other shell is not reccomended)
+- bash(any other shell is not recommended)
 
 Credits:
 Jklars(code),
